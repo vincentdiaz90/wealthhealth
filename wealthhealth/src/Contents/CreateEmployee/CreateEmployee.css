@@ -1,0 +1,68 @@
+.createEmployee{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 95vw;
+    background-color: #817f93;
+    margin: 3vh auto;
+}
+
+.create-employee-title{
+    margin-bottom: 60px;
+}
+
+#form-create{
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(12, 1fr);
+    
+}
+
+.informations{
+    grid-column: 1 / 6;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.zip-code{
+    grid-column: 7 / 12;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.form-section-departments{
+    grid-column: 1 / -1;
+    margin: 50px auto 20px;
+}
+
+.form-inputs{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+label{
+    margin-bottom: 5px;
+}
+
+#form-btn-submit{
+    border: none;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+input{
+    outline: none;
+    border-radius: 5px;
+    border: none;
+    padding: 10px 15px;
+}
