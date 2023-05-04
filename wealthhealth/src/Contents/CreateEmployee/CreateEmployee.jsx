@@ -2,8 +2,8 @@ import React from 'react'
 import { useState, useEffect } from "react";
 
 import SelectForm from '../../Components/SelectForm/SelectForm'
-import ModalCreateEmployee from '../../Components/ModalCreateEmployee/ModalCreateEmployee'
-//import { ModalCreateEmployee } from 'npm-modal-v'
+//import ModalCreateEmployee from '../../Components/ModalCreateEmployee/ModalCreateEmployee'
+import { ModalCreateEmployee } from 'npm-modal-v'
 
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
@@ -151,12 +151,12 @@ export default function CreateEmployee() {
                         <div className="form-inputs">
                             <label htmlFor="date-of-birth">Date of birth</label>
                             <DatePicker className="date-picker-input" id="date-of-birth" onChange={(date) => {handleFormDateChange("Date of birth", date); setDateOfBirth(date)} } placeholderText="Your birth date" selected={dateOfBirth} />
-                            {/* <input type="date"></input> */}
+                            
                         </div>
                         <div className="form-inputs">
                             <label htmlFor="start-date">Start date</label>
                             <DatePicker className="date-picker-input" id="start-date" onChange={(date) => {handleFormDateChange("Start date", date); setStartDate(date)} } placeholderText="Your start date" selected={startDate} />
-                            {/* <input type="date"></input> */}
+                            
                         </div>
                     </div>
                 </section>
