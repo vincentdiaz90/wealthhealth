@@ -19,7 +19,6 @@ import { ModalCreateEmployee } from 'npm-modal-v'
 2. The state :
 
 ```javascript
-const [modalReset, setModalReset] = useState(false)
 const [displayModal, setDisplayModal] = useState(false)
 ```
 
@@ -27,7 +26,6 @@ const [displayModal, setDisplayModal] = useState(false)
 
 ```javascript
 <ModalCreateEmployee
-    key={modalReset}
     id="modal-created"
     showModal={displayModal}
     closeModal={() => setDisplayModal(false)}
@@ -37,7 +35,8 @@ const [displayModal, setDisplayModal] = useState(false)
 
 ### We put props into this component from the current page where you use this npm plugin
 
-#### key allow to reset the object employee where the previous employee was create (UI-UX best practice) / showModal-closeModal Allow to see or not the modale / response show a text (here the success of the an employee's creation)
+#### showModal-closeModal Allow to see or not the modale 
+#### response show a text (here the success of the an employee's creation)
 
 ## Personalize
 
