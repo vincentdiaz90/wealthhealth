@@ -1,70 +1,55 @@
-# Getting Started with Create React App
+# npm plugin : modal
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Description
 
-## Available Scripts
+This plugin is for the project 14 from OpenClassrooms formation "Front-End".
 
-In the project directory, you can run:
+```cmd
+npm i npm-modal-v
+```
 
-### `npm start`
+## How to use ?
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1. Import the plugin in your project like this :
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+```javascript
+import { ModalCreateEmployee } from 'npm-modal-v'
+```
 
-### `npm test`
+2. The state :
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```javascript
+const [modalReset, setModalReset] = useState(false)
+const [displayModal, setDisplayModal] = useState(false)
+```
 
-### `npm run build`
+3. In the return :
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```javascript
+<ModalCreateEmployee
+    key={modalReset}
+    id="modal-created"
+    showModal={displayModal}
+    closeModal={() => setDisplayModal(false)}
+    response="Employee Created !"
+/>
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### We put props into this component from the current page where you use this npm plugin
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+#### key allow to reset the object employee where the previous employee was create (UI-UX best practice) / showModal-closeModal Allow to see or not the modale / response show a text (here the success of the an employee's creation)
 
-### `npm run eject`
+## Personalize
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+1. Put this into your component :
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```javascript
+const modalParameter = {
+    backgroundColor: '#f1f1f1',
+    borderRadius: 10 + 'px',
+    color: '#222',
+    fontSize: 22 + 'px',
+    padding: '20px 50px',
+}
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
