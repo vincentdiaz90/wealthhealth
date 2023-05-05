@@ -2,7 +2,7 @@
 
 ## Description
 
-This plugin is for the project 14 from OpenClassrooms formation "Front-End".
+This plugin is for the project 14 from OpenClassrooms formation "javaScript/React developer".
 
 ```cmd
 npm i npm-modal-v
