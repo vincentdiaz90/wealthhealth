@@ -6,7 +6,7 @@
 
 ### Description du projet
 
-Ce projet est le n°14 du parcours [**Développeur Front-End**](https://openclassrooms.com/fr/paths/314-developpeur-front-end 'Développeur Front-End') qui consiste à faire passer une librairie jQuery vers React.
+Ce projet est le n°14 du parcours [**Développeur Front-End**](https://openclassrooms.com/fr/paths/314-developpeur-front-end 'Développeur d'application JavaScript React') qui consiste à faire passer une librairie jQuery vers React.
 
 ### Cahiers des charges
 
